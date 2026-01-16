@@ -12,6 +12,43 @@
         .card { background: white; border-radius: 1.5rem; box-shadow: 0 10px 25px -5px rgba(0, 0, 0, 0.1); }
         .btn-pay { transition: transform 0.2s; }
         .btn-pay:hover { transform: scale(1.05); }
+        .combo-badge {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: white;
+            padding: 4px 12px;
+            border-radius: 20px;
+            font-size: 0.8rem;
+            font-weight: 600;
+            display: inline-block;
+            margin-bottom: 10px;
+        }
+        .date-range {
+            background: #f0f9ff;
+            border-left: 4px solid #3b82f6;
+            padding: 10px 15px;
+            border-radius: 8px;
+            margin: 15px 0;
+            font-weight: 600;
+        }
+        .most-popular {
+            position: relative;
+            border: 3px solid #f59e0b;
+            transform: scale(1.05);
+            z-index: 10;
+        }
+        .most-popular::before {
+            content: "MÁS POPULAR";
+            position: absolute;
+            top: -12px;
+            left: 50%;
+            transform: translateX(-50%);
+            background: #f59e0b;
+            color: white;
+            padding: 4px 15px;
+            border-radius: 20px;
+            font-size: 0.8rem;
+            font-weight: bold;
+        }
     </style>
 
     <!-- Meta Pixel Code -->
@@ -35,8 +72,8 @@
 </head>
 <body class="text-gray-800">
 
-    <div class="bg-blue-700 text-white text-center py-3 px-4 font-bold text-sm md:text-base">
-        👉 Inscripciones abiertas: $270.000 COP. ¡Inicia el 17 de enero! 💥
+    <div class="bg-gradient-to-r from-blue-600 to-purple-600 text-white text-center py-3 px-4 font-bold text-sm md:text-base">
+        👉 ¡Oferta especial! COMBO CALENDARIO A + B por tiempo limitado. ¡Inicia el 17 de enero! 💥
     </div>
 
     <main class="max-w-4xl mx-auto px-4 py-8">
@@ -47,6 +84,173 @@
             <p class="text-lg md:text-xl font-bold leading-relaxed max-w-2xl mx-auto">
                 Alcanza tu mejor resultado en el ICFES con estrategias que ya llevaron a otros a sacar más de 415 puntos.
             </p>
+        </section>
+
+        <!-- NUEVA SECCIÓN DEL COMBO A + B -->
+        <section class="mb-16">
+            <div class="text-center mb-10">
+                <span class="combo-badge">OFERTA ESPECIAL</span>
+                <h2 class="text-3xl font-bold text-blue-800">COMBO CALENDARIO A + B</h2>
+                <p class="text-gray-600 mt-2">La preparación más completa para el ICFES 2026</p>
+                
+                <div class="date-range max-w-md mx-auto">
+                    <i class="fas fa-calendar-alt mr-2"></i>
+                    <span>Iniciamos el 17 de enero y vamos hasta el 24 de julio</span>
+                </div>
+            </div>
+
+            <div class="grid md:grid-cols-3 gap-6 max-w-5xl mx-auto">
+                <!-- Opción 1: Combo Completo -->
+                <div class="card border-2 border-purple-600 most-popular p-6 relative">
+                    <div class="text-center mb-6">
+                        <h3 class="text-xl font-bold text-purple-700 mb-2">COMBO COMPLETO A + B</h3>
+                        <div class="text-4xl font-black text-gray-900">$400.000</div>
+                        <div class="text-sm text-gray-500 line-through mt-1">Valor normal: $540.000</div>
+                        <div class="text-green-600 font-bold mt-2">Ahorras $140.000</div>
+                    </div>
+                    
+                    <ul class="space-y-3 mb-8 text-sm">
+                        <li class="flex items-start gap-2">
+                            <span class="text-green-500">✓</span>
+                            <span><strong>TODO el calendario A y B</strong> completo</span>
+                        </li>
+                        <li class="flex items-start gap-2">
+                            <span class="text-green-500">✓</span>
+                            <span><strong>6 meses</strong> de preparación intensiva</span>
+                        </li>
+                        <li class="flex items-start gap-2">
+                            <span class="text-green-500">✓</span>
+                            <span><strong>4 simulacros completos</strong> calificados</span>
+                        </li>
+                        <li class="flex items-start gap-2">
+                            <span class="text-green-500">✓</span>
+                            <span><strong>Acceso ilimitado</strong> a plataforma interactiva</span>
+                        </li>
+                        <li class="flex items-start gap-2">
+                            <span class="text-green-500">✓</span>
+                            <span><strong>Grupo VIP premium</strong> de soporte</span>
+                        </li>
+                        <li class="flex items-start gap-2">
+                            <span class="text-green-500">✓</span>
+                            <span><strong>Material exclusivo</strong> Calendario A + B</span>
+                        </li>
+                        <li class="flex items-start gap-2">
+                            <span class="text-green-500">✓</span>
+                            <span><strong>Bonos especiales:</strong> Clase de becas + Taller extra</span>
+                        </li>
+                    </ul>
+                    
+                    <a href="https://biz.payulatam.com/B0fa4bd1EA0115B" class="block w-full">
+                        <img src="https://ecommerce.payulatam.com/img-secure-2015/boton_pagar_grande.png" 
+                             alt="Pagar Combo Completo" 
+                             class="w-full btn-pay">
+                    </a>
+                    <p class="text-center text-xs text-gray-500 mt-3">Pago único - 6 meses de acceso</p>
+                </div>
+
+                <!-- Opción 2: Calendario A -->
+                <div class="card border-2 border-blue-600 p-6">
+                    <div class="text-center mb-6">
+                        <h3 class="text-xl font-bold text-blue-700 mb-2">CALENDARIO A</h3>
+                        <div class="text-4xl font-black text-gray-900">$270.000</div>
+                        <div class="text-sm text-gray-500 mt-1">Enero - Abril</div>
+                    </div>
+                    
+                    <ul class="space-y-3 mb-8 text-sm">
+                        <li class="flex items-start gap-2">
+                            <span class="text-green-500">✓</span>
+                            <span><strong>Fundamentos esenciales</strong> de todas las materias</span>
+                        </li>
+                        <li class="flex items-start gap-2">
+                            <span class="text-green-500">✓</span>
+                            <span><strong>3 meses</strong> de preparación</span>
+                        </li>
+                        <li class="flex items-start gap-2">
+                            <span class="text-green-500">✓</span>
+                            <span><strong>2 simulacros diagnósticos</strong></span>
+                        </li>
+                        <li class="flex items-start gap-2">
+                            <span class="text-green-500">✓</span>
+                            <span><strong>Clases en vivo</strong> lunes a viernes 7pm-9pm</span>
+                        </li>
+                        <li class="flex items-start gap-2">
+                            <span class="text-green-500">✓</span>
+                            <span><strong>Acceso a grabaciones</strong></span>
+                        </li>
+                        <li class="flex items-start gap-2">
+                            <span class="text-green-500">✓</span>
+                            <span><strong>Material de estudio</strong> actualizado</span>
+                        </li>
+                        <li class="flex items-start gap-2">
+                            <span class="text-green-500">✓</span>
+                            <span><strong>Soporte en grupo VIP</strong></span>
+                        </li>
+                    </ul>
+                    
+                    <a href="https://biz.payulatam.com/B0fa4bdCA149DD5" class="block w-full">
+                        <img src="https://ecommerce.payulatam.com/img-secure-2015/boton_pagar_mediano.png" 
+                             alt="Pagar Calendario A" 
+                             class="w-full btn-pay">
+                    </a>
+                </div>
+
+                <!-- Opción 3: Calendario B -->
+                <div class="card border-2 border-orange-600 p-6">
+                    <div class="text-center mb-6">
+                        <h3 class="text-xl font-bold text-orange-700 mb-2">CALENDARIO B</h3>
+                        <div class="text-4xl font-black text-gray-900">$270.000</div>
+                        <div class="text-sm text-gray-500 mt-1">Mayo - Julio</div>
+                    </div>
+                    
+                    <ul class="space-y-3 mb-8 text-sm">
+                        <li class="flex items-start gap-2">
+                            <span class="text-green-500">✓</span>
+                            <span><strong>Profundización y repaso final</strong></span>
+                        </li>
+                        <li class="flex items-start gap-2">
+                            <span class="text-green-500">✓</span>
+                            <span><strong>3 meses</strong> de preparación intensiva</span>
+                        </li>
+                        <li class="flex items-start gap-2">
+                            <span class="text-green-500">✓</span>
+                            <span><strong>2 simulacros finales</strong> con análisis detallado</span>
+                        </li>
+                        <li class="flex items-start gap-2">
+                            <span class="text-green-500">✓</span>
+                            <span><strong>Técnicas avanzadas</strong> para puntajes altos</span>
+                        </li>
+                        <li class="flex items-start gap-2">
+                            <span class="text-green-500">✓</span>
+                            <span><strong>Resolución de dudas</strong> personalizada</span>
+                        </li>
+                        <li class="flex items-start gap-2">
+                            <span class="text-green-500">✓</span>
+                            <span><strong>Material exclusivo</strong> de última fase</span>
+                        </li>
+                        <li class="flex items-start gap-2">
+                            <span class="text-green-500">✓</span>
+                            <span><strong>Preparación mental</strong> para el examen</span>
+                        </li>
+                    </ul>
+                    
+                    <a href="https://biz.payulatam.com/B0fa4bdD372890F" class="block w-full">
+                        <img src="https://ecommerce.payulatam.com/img-secure-2015/boton_pagar_mediano.png" 
+                             alt="Pagar Calendario B" 
+                             class="w-full btn-pay">
+                    </a>
+                </div>
+            </div>
+
+            <div class="text-center mt-8 max-w-3xl mx-auto">
+                <div class="bg-yellow-50 border border-yellow-200 rounded-xl p-4">
+                    <p class="font-bold text-yellow-800">💡 ¿Cuál elegir?</p>
+                    <p class="text-gray-700 mt-2">
+                        <strong>El COMBO A+B es ideal</strong> si quieres la preparación más completa desde enero hasta julio. 
+                        <strong>Calendario A</strong> es perfecto para empezar con bases sólidas. 
+                        <strong>Calendario B</strong> es excelente si ya tienes conocimientos y quieres el empujón final.
+                    </p>
+                </div>
+            </div>
         </section>
 
         <div class="grid md:grid-cols-2 gap-8 items-center mb-16">
@@ -105,48 +309,28 @@
         <section class="py-12 mb-16">
             <h2 class="text-3xl font-extrabold text-center text-blue-800 mb-10">Testimonios</h2>
             <div class="columns-1 sm:columns-2 lg:columns-3 gap-4 space-y-4">
-                <img src="https://raw.githubusercontent.com/anitagomezmesa-pro/Lumen_ICFES240/main/Captura%20de%20pantalla%202025-12-27%20222910.png" class="rounded-2xl shadow-md w-full border border-[...
+                <img src="https://raw.githubusercontent.com/anitagomezmesa-pro/Lumen_ICFES240/main/Captura%20de%20pantalla%202025-12-27%20222910.png" class="rounded-2xl shadow-md w-full border border-gray-100" alt="Testimonio">
                 <img src="https://raw.githubusercontent.com/anitagomezmesa-pro/Lumen_ICFES240/main/1.1.png" class="rounded-2xl shadow-md w-full border border-gray-100" alt="Testimonio">
-                <img src="https://raw.githubusercontent.com/anitagomezmesa-pro/Lumen_ICFES240/main/Captura%20de%20pantalla%202025-12-27%20223108.png" class="rounded-2xl shadow-md w-full border border-[...
+                <img src="https://raw.githubusercontent.com/anitagomezmesa-pro/Lumen_ICFES240/main/Captura%20de%20pantalla%202025-12-27%20223108.png" class="rounded-2xl shadow-md w-full border border-gray-100" alt="Testimonio">
                 <img src="https://raw.githubusercontent.com/anitagomezmesa-pro/Lumen_ICFES240/main/26.jpg" class="rounded-2xl shadow-md w-full border border-gray-100" alt="Testimonio">
                 <img src="https://raw.githubusercontent.com/anitagomezmesa-pro/Lumen_ICFES240/main/1.3.png" class="rounded-2xl shadow-md w-full border border-gray-100" alt="Testimonio">
             </div>
         </section>
 
-        <section class="max-w-sm mx-auto mb-10">
-            <div class="card border-2 border-blue-600 overflow-hidden text-center">
-                <div class="bg-blue-600 text-white py-4 font-bold uppercase">Pre-ICFES</div>
-                <div class="p-8">
-                    <div class="text-4xl font-black mb-6 text-blue-700">$270.000</div>
-                    <ul class="text-left space-y-3 mb-8 text-sm">
-                        <li class="flex items-center gap-2 font-semibold">● Clases en vivo lunes a viernes</li>
-                        <li class="flex items-center gap-2 font-semibold">● 2 Simulacros calificados</li>
-                        <li class="flex items-center gap-2 font-semibold">● Grupo VIP de soporte</li>
-                        <li class="flex items-center gap-2 font-semibold">● Bono: Clase de BECAS</li>
-                        <li class="flex items-center gap-2 font-semibold">● Profesores sacaron +415 en el ICFES</li>
-                        <li class="flex items-center gap-2 font-semibold">● Plataforma interactiva</li>
-                        <li class="flex items-center gap-2 font-semibold">● Acompañamiento personalizado</li>
-                    </ul>
-                    <a href="https://biz.payulatam.com/B0fa4bdCA149DD5" class="inline-block btn-pay">
-                        <img src="https://ecommerce.payulatam.com/img-secure-2015/boton_pagar_grande.png" alt="Pagar con PayU" class="h-14">
-                    </a>
-                </div>
-            </div>
-        </section>
-
+        <!-- Sección de Simulacro Individual (mantenida) -->
         <section class="max-w-sm mx-auto mb-20">
             <div class="card border-2 border-orange-500 overflow-hidden text-center">
                 <div class="bg-orange-500 text-white py-4 font-bold uppercase tracking-widest">Simulacro Individual</div>
                 <div class="p-8">
                     <h2 class="text-4xl font-black mb-6 text-gray-800">$19.000</h2>
                     <ul class="text-left space-y-3 mb-8 text-sm">
-                        <li class="flex items-start gap-2"><span>✅Calificación con desviación estándar.(Igual al icfes)</li>
-                        <li class="flex items-start gap-2"><span>✅254 preguntas</strong> con ALTA probabilidad de salir (nuevas)</li>
-                        <li class="flex items-start gap-2"><span>✅Puntaje global</strong> sobre 500 y sobre 100 por materia</li>
-                        <li class="flex items-start gap-2"><span>✅Respuestas</strong> de todo el simulacro y sus explicaciones.</li>
-                        <li class="flex items-start gap-2"><span>✅Material actualizado</strong></li>
-                        <li class="flex items-start gap-2"><span>✅Plataforma interactiva</strong></li>
-                        <li class="flex items-start gap-2"><span>✅Grupo VIP</strong></li>
+                        <li class="flex items-start gap-2"><span>✅</span>Calificación con desviación estándar.(Igual al icfes)</li>
+                        <li class="flex items-start gap-2"><span>✅</span>254 preguntas con ALTA probabilidad de salir (nuevas)</li>
+                        <li class="flex items-start gap-2"><span>✅</span>Puntaje global sobre 500 y sobre 100 por materia</li>
+                        <li class="flex items-start gap-2"><span>✅</span>Respuestas de todo el simulacro y sus explicaciones.</li>
+                        <li class="flex items-start gap-2"><span>✅</span>Material actualizado</li>
+                        <li class="flex items-start gap-2"><span>✅</span>Plataforma interactiva</li>
+                        <li class="flex items-start gap-2"><span>✅</span>Grupo VIP</li>
                     </ul>
                     <a href="https://biz.payulatam.com/B0fa4bdD372890F" class="inline-block btn-pay">
                         <img src="https://ecommerce.payulatam.com/img-secure-2015/boton_pagar_grande.png" alt="Pagar Simulacro" class="h-14">
@@ -160,7 +344,7 @@
             <div class="space-y-4 max-w-2xl mx-auto">
                 <p class="flex items-center gap-3"><span>✅</span> Preguntas con alta probabilidad de repetirse</p>
                 <p class="flex items-center gap-3"><span>✅</span> Técnicas reales de puntajes +415</p>
-                <p class="flex items-center gap-3"><span>✅</span> Profesores comprometidos con tu resultado</p>
+                <p class="flex items-start gap-3"><span>✅</span> Profesores comprometidos con tu resultado</p>
             </div>
         </section>
 
