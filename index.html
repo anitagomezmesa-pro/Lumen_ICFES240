@@ -7,6 +7,7 @@
     <script src="https://cdn.tailwindcss.com"></script>
     <meta property="og:description" content="Preicfes ratis - Simulacro ICFES 2026. La mejor manera de estudiar y practicar para la prueba ICFES Saber 11. Obtén excelentes resultados ¡Regístrate ya!">
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <style>
         body { font-family: 'Inter', sans-serif; background-color: #fdf6ed; }
         .card { background: white; border-radius: 1.5rem; box-shadow: 0 10px 25px -5px rgba(0, 0, 0, 0.1); }
@@ -48,6 +49,15 @@
             border-radius: 20px;
             font-size: 0.8rem;
             font-weight: bold;
+        }
+        .calendar-period {
+            background: #eef2ff;
+            border-radius: 8px;
+            padding: 8px 12px;
+            font-size: 0.9rem;
+            font-weight: 600;
+            margin-top: 5px;
+            display: inline-block;
         }
     </style>
 
@@ -109,34 +119,43 @@
                         <div class="text-green-600 font-bold mt-2">Ahorras $140.000</div>
                     </div>
                     
+                    <div class="mb-4">
+                        <div class="calendar-period" style="background: #f0e6ff;">
+                            <i class="fas fa-calendar-check mr-1"></i> Calendario B: 17 enero - 14 marzo
+                        </div>
+                        <div class="calendar-period mt-2" style="background: #e6f7ff;">
+                            <i class="fas fa-calendar-star mr-1"></i> Calendario A: 30 marzo - 24 julio
+                        </div>
+                    </div>
+                    
                     <ul class="space-y-3 mb-8 text-sm">
                         <li class="flex items-start gap-2">
                             <span class="text-green-500">✓</span>
-                            <span><strong>TODO el calendario A y B</strong> completo</span>
+                            <span><strong>TODO el calendario A y B completo</strong></span>
                         </li>
                         <li class="flex items-start gap-2">
                             <span class="text-green-500">✓</span>
-                            <span><strong>6 meses</strong> de preparación intensiva</span>
+                            <span><strong>6 meses de preparación intensiva</strong></span>
                         </li>
                         <li class="flex items-start gap-2">
                             <span class="text-green-500">✓</span>
-                            <span><strong>4 simulacros completos</strong> calificados</span>
+                            <span><strong>4 simulacros completos calificados</strong></span>
                         </li>
                         <li class="flex items-start gap-2">
                             <span class="text-green-500">✓</span>
-                            <span><strong>Acceso ilimitado</strong> a plataforma interactiva</span>
+                            <span><strong>Acceso ilimitado a plataforma interactiva</strong></span>
                         </li>
                         <li class="flex items-start gap-2">
                             <span class="text-green-500">✓</span>
-                            <span><strong>Grupo VIP premium</strong> de soporte</span>
+                            <span><strong>Grupo VIP premium de soporte</strong></span>
                         </li>
                         <li class="flex items-start gap-2">
                             <span class="text-green-500">✓</span>
-                            <span><strong>Material exclusivo</strong> Calendario A + B</span>
+                            <span><strong>Material exclusivo Calendario A + B</strong></span>
                         </li>
                         <li class="flex items-start gap-2">
                             <span class="text-green-500">✓</span>
-                            <span><strong>Bonos especiales:</strong> Clase de becas + Taller extra</span>
+                            <span><strong>Bonos especiales:</strong> Clase de becas + Orientación vocacional</span>
                         </li>
                     </ul>
                     
@@ -148,38 +167,40 @@
                     <p class="text-center text-xs text-gray-500 mt-3">Pago único - 6 meses de acceso</p>
                 </div>
 
-                <!-- Opción 2: Calendario A -->
+                <!-- Opción 2: Calendario B -->
                 <div class="card border-2 border-blue-600 p-6">
                     <div class="text-center mb-6">
-                        <h3 class="text-xl font-bold text-blue-700 mb-2">CALENDARIO A</h3>
+                        <h3 class="text-xl font-bold text-blue-700 mb-2">CALENDARIO B</h3>
                         <div class="text-4xl font-black text-gray-900">$270.000</div>
-                        <div class="text-sm text-gray-500 mt-1">Enero - Abril</div>
+                        <div class="calendar-period" style="background: #eef2ff;">
+                            <i class="fas fa-calendar-check mr-1"></i> 17 enero - 14 marzo
+                        </div>
                     </div>
                     
                     <ul class="space-y-3 mb-8 text-sm">
                         <li class="flex items-start gap-2">
                             <span class="text-green-500">✓</span>
-                            <span><strong>Fundamentos esenciales</strong> de todas las materias</span>
+                            <span><strong>Fundamentos esenciales de todas las materias</strong></span>
                         </li>
                         <li class="flex items-start gap-2">
                             <span class="text-green-500">✓</span>
-                            <span><strong>3 meses</strong> de preparación</span>
+                            <span><strong>Enero a marzo en preparación intensiva</strong></span>
                         </li>
                         <li class="flex items-start gap-2">
                             <span class="text-green-500">✓</span>
-                            <span><strong>2 simulacros diagnósticos</strong></span>
+                            <span><strong>2 simulacros diagnósticos calificados</strong></span>
                         </li>
                         <li class="flex items-start gap-2">
                             <span class="text-green-500">✓</span>
-                            <span><strong>Clases en vivo</strong> lunes a viernes 7pm-9pm</span>
+                            <span><strong>Clases en vivo lunes a viernes 7pm-9pm</strong></span>
                         </li>
                         <li class="flex items-start gap-2">
                             <span class="text-green-500">✓</span>
-                            <span><strong>Acceso a grabaciones</strong></span>
+                            <span><strong>Acceso a grabaciones de todas las clases</strong></span>
                         </li>
                         <li class="flex items-start gap-2">
                             <span class="text-green-500">✓</span>
-                            <span><strong>Material de estudio</strong> actualizado</span>
+                            <span><strong>Material de estudio actualizado</strong></span>
                         </li>
                         <li class="flex items-start gap-2">
                             <span class="text-green-500">✓</span>
@@ -187,57 +208,61 @@
                         </li>
                     </ul>
                     
-                    <a href="https://biz.payulatam.com/B0fa4bdCA149DD5" class="block w-full">
+                    <a href="https://biz.payulatam.com/B0fa4bdA480D87C" class="block w-full">
                         <img src="https://ecommerce.payulatam.com/img-secure-2015/boton_pagar_mediano.png" 
-                             alt="Pagar Calendario A" 
+                             alt="Pagar Calendario B" 
                              class="w-full btn-pay">
                     </a>
+                    <p class="text-center text-xs text-gray-500 mt-3">Pago único - Acceso hasta 14 de marzo</p>
                 </div>
 
-                <!-- Opción 3: Calendario B -->
+                <!-- Opción 3: Calendario A -->
                 <div class="card border-2 border-orange-600 p-6">
                     <div class="text-center mb-6">
-                        <h3 class="text-xl font-bold text-orange-700 mb-2">CALENDARIO B</h3>
+                        <h3 class="text-xl font-bold text-orange-700 mb-2">CALENDARIO A</h3>
                         <div class="text-4xl font-black text-gray-900">$270.000</div>
-                        <div class="text-sm text-gray-500 mt-1">Mayo - Julio</div>
+                        <div class="calendar-period" style="background: #fff7ed;">
+                            <i class="fas fa-calendar-star mr-1"></i> 30 marzo - 24 julio
+                        </div>
                     </div>
                     
                     <ul class="space-y-3 mb-8 text-sm">
                         <li class="flex items-start gap-2">
                             <span class="text-green-500">✓</span>
-                            <span><strong>Profundización y repaso final</strong></span>
+                            <span><strong>Preparación intensiva de marzo a julio</strong></span>
                         </li>
                         <li class="flex items-start gap-2">
                             <span class="text-green-500">✓</span>
-                            <span><strong>3 meses</strong> de preparación intensiva</span>
+                            <span><strong>4 meses de preparación intensiva</strong></span>
                         </li>
                         <li class="flex items-start gap-2">
                             <span class="text-green-500">✓</span>
-                            <span><strong>2 simulacros finales</strong> con análisis detallado</span>
+                            <span><strong>2 simulacros con análisis detallado</strong></span>
                         </li>
                         <li class="flex items-start gap-2">
                             <span class="text-green-500">✓</span>
-                            <span><strong>Técnicas avanzadas</strong> para puntajes altos</span>
+                            <span><strong>Técnicas avanzadas para puntajes altos</strong></span>
                         </li>
                         <li class="flex items-start gap-2">
                             <span class="text-green-500">✓</span>
-                            <span><strong>Resolución de dudas</strong> personalizada</span>
+                            <span><strong>Resolución de dudas personalizada</strong></span>
                         </li>
                         <li class="flex items-start gap-2">
                             <span class="text-green-500">✓</span>
-                            <span><strong>Material exclusivo</strong> de última fase</span>
+                            <span><strong>Material exclusivo de última fase</strong></span>
                         </li>
                         <li class="flex items-start gap-2">
                             <span class="text-green-500">✓</span>
-                            <span><strong>Preparación mental</strong> para el examen</span>
+                            <span><strong>Preparación mental y vocacional para el examen</strong></span>
                         </li>
                     </ul>
                     
                     <a href="https://biz.payulatam.com/B0fa4bdD372890F" class="block w-full">
                         <img src="https://ecommerce.payulatam.com/img-secure-2015/boton_pagar_mediano.png" 
-                             alt="Pagar Calendario B" 
+                             alt="Pagar Calendario A" 
                              class="w-full btn-pay">
                     </a>
+                    <p class="text-center text-xs text-gray-500 mt-3">Pago único - Acceso hasta 24 de julio</p>
                 </div>
             </div>
 
@@ -245,9 +270,9 @@
                 <div class="bg-yellow-50 border border-yellow-200 rounded-xl p-4">
                     <p class="font-bold text-yellow-800">💡 ¿Cuál elegir?</p>
                     <p class="text-gray-700 mt-2">
-                        <strong>El COMBO A+B es ideal</strong> si quieres la preparación más completa desde enero hasta julio. 
-                        <strong>Calendario A</strong> es perfecto para empezar con bases sólidas. 
-                        <strong>Calendario B</strong> es excelente si ya tienes conocimientos y quieres el empujón final.
+                        <strong>El COMBO A+B es ideal</strong> si quieres la preparación más completa desde enero hasta julio con un ahorro de $140.000. 
+                        <strong>Calendario B es perfecto</strong> para empezar con bases sólidas (enero-marzo). 
+                        <strong>Calendario A es excelente</strong> si presentas el ICFES en julio (marzo-julio).
                     </p>
                 </div>
             </div>
@@ -269,7 +294,7 @@
                 </div>
                 <div class="flex items-start gap-3">
                     <span class="text-green-500 text-xl">✅</span>
-                    <p><strong>Dos simulacros:</strong> uno diagnóstico y otro de seguimiento.</p>
+                    <p><strong>Simulacros completos</strong> con calificación detallada</p>
                 </div>
             </div>
             <div class="card p-4">
@@ -280,7 +305,7 @@
         <section class="card p-8 mb-16 border-t-4 border-orange-400">
             <h3 class="text-2xl font-bold mb-4 text-center md:text-left">Creado por expertos que ya dominaron el ICFES</h3>
             <p class="text-gray-700 leading-relaxed">
-                El equipo docente está conformado por profesionales que <strong>sacaron entre 415 y 491 puntos en el ICFES</strong> y tienen experiencia enseñando estrategias efectivas para mejorar [...]
+                El equipo docente está conformado por profesionales que <strong>sacaron entre 415 y 491 puntos en el ICFES</strong> y tienen experiencia enseñando estrategias efectivas para mejorar tu rendimiento en la prueba.
             </p>
         </section>
 
@@ -317,34 +342,39 @@
             </div>
         </section>
 
-        <!-- Sección de Simulacro Individual (mantenida) -->
-        <section class="max-w-sm mx-auto mb-20">
-            <div class="card border-2 border-orange-500 overflow-hidden text-center">
-                <div class="bg-orange-500 text-white py-4 font-bold uppercase tracking-widest">Simulacro Individual</div>
-                <div class="p-8">
-                    <h2 class="text-4xl font-black mb-6 text-gray-800">$19.000</h2>
-                    <ul class="text-left space-y-3 mb-8 text-sm">
-                        <li class="flex items-start gap-2"><span>✅</span>Calificación con desviación estándar.(Igual al icfes)</li>
-                        <li class="flex items-start gap-2"><span>✅</span>254 preguntas con ALTA probabilidad de salir (nuevas)</li>
-                        <li class="flex items-start gap-2"><span>✅</span>Puntaje global sobre 500 y sobre 100 por materia</li>
-                        <li class="flex items-start gap-2"><span>✅</span>Respuestas de todo el simulacro y sus explicaciones.</li>
-                        <li class="flex items-start gap-2"><span>✅</span>Material actualizado</li>
-                        <li class="flex items-start gap-2"><span>✅</span>Plataforma interactiva</li>
-                        <li class="flex items-start gap-2"><span>✅</span>Grupo VIP</li>
-                    </ul>
-                    <a href="https://biz.payulatam.com/B0fa4bdD372890F" class="inline-block btn-pay">
-                        <img src="https://ecommerce.payulatam.com/img-secure-2015/boton_pagar_grande.png" alt="Pagar Simulacro" class="h-14">
-                    </a>
-                </div>
-            </div>
-        </section>
-
+        <!-- Sección con información adicional sobre los calendarios -->
         <section class="bg-white p-8 rounded-3xl shadow-sm mb-20">
-            <h2 class="text-2xl font-bold text-blue-800 text-center mb-6">¿Qué hace diferente este Pre-ICFES del resto?</h2>
-            <div class="space-y-4 max-w-2xl mx-auto">
-                <p class="flex items-center gap-3"><span>✅</span> Preguntas con alta probabilidad de repetirse</p>
-                <p class="flex items-center gap-3"><span>✅</span> Técnicas reales de puntajes +415</p>
-                <p class="flex items-start gap-3"><span>✅</span> Profesores comprometidos con tu resultado</p>
+            <h2 class="text-2xl font-bold text-blue-800 text-center mb-6">Calendarios de Preparación</h2>
+            <div class="space-y-6 max-w-3xl mx-auto">
+                <div class="bg-blue-50 p-5 rounded-xl">
+                    <h3 class="font-bold text-lg text-blue-700 mb-2 flex items-center gap-2">
+                        <i class="fas fa-calendar-check"></i> Calendario B (17 enero - 14 marzo)
+                    </h3>
+                    <p class="text-gray-700">
+                        <strong>Enfoque:</strong> Establecer bases sólidas en todas las materias del ICFES. 
+                        Ideal para estudiantes que necesitan reforzar sus conocimientos fundamentales.
+                    </p>
+                </div>
+                
+                <div class="bg-orange-50 p-5 rounded-xl">
+                    <h3 class="font-bold text-lg text-orange-700 mb-2 flex items-center gap-2">
+                        <i class="fas fa-calendar-star"></i> Calendario A (30 marzo - 24 julio)
+                    </h3>
+                    <p class="text-gray-700">
+                        <strong>Enfoque:</strong> Profundización y repaso intensivo. 
+                        Perfecto para aplicar técnicas avanzadas y prepararse para el examen final.
+                    </p>
+                </div>
+                
+                <div class="bg-purple-50 p-5 rounded-xl">
+                    <h3 class="font-bold text-lg text-purple-700 mb-2 flex items-center gap-2">
+                        <i class="fas fa-crown"></i> Combo A + B (17 enero - 24 julio)
+                    </h3>
+                    <p class="text-gray-700">
+                        <strong>Enfoque:</strong> La preparación más completa. Comienza desde cero y termina listo para el examen, 
+                        con un ahorro significativo respecto a comprar los calendarios por separado.
+                    </p>
+                </div>
             </div>
         </section>
 
@@ -366,7 +396,48 @@
                         <span class="group-open:rotate-180 transition-transform">▼</span>
                     </summary>
                     <p class="mt-4 text-gray-600 leading-relaxed">
-                        Las clases son 100% <strong>online en vivo en zoom</strong>, y por medio de una plataforma interactiva donde podrás participar, resolver dudas y aprender de forma práctica. T[...]
+                        Las clases son 100% <strong>online en vivo en zoom</strong>, y por medio de una plataforma interactiva donde podrás participar, resolver dudas y aprender de forma práctica. Todas las clases quedan grabadas para que las puedas ver después si no puedes asistir en vivo.
+                    </p>
+                </details>
+                
+                <details class="group border-b border-gray-100 py-4 cursor-pointer">
+                    <summary class="font-bold text-lg flex justify-between items-center">
+                        ¿Qué pasa si compro solo el Calendario B y luego quiero el A?
+                        <span class="group-open:rotate-180 transition-transform">▼</span>
+                    </summary>
+                    <p class="mt-4 text-gray-600 leading-relaxed">
+                        Si compras el Calendario B y luego decides continuar con el A, podrás adquirirlo al precio normal de $270.000. 
+                        <strong>Recomendamos el COMBO completo para aprovechar el ahorro de $140.000.</strong>
+                    </p>
+                </details>
+                
+                <details class="group border-b border-gray-100 py-4 cursor-pointer">
+                    <summary class="font-bold text-lg flex justify-between items-center">
+                        ¿Hay descuento por pago anticipado?
+                        <span class="group-open:rotate-180 transition-transform">▼</span>
+                    </summary>
+                    <p class="mt-4 text-gray-600 leading-relaxed">
+                        <strong>¡Sí!</strong> El COMBO A+B ya incluye un descuento especial de $140.000 sobre el valor total de ambos calendarios por separado. 
+                        Este precio especial es por tiempo limitado.
+                    </p>
+                </details>
+                
+                <details class="group border-b border-gray-100 py-4 cursor-pointer">
+                    <summary class="font-bold text-lg flex justify-between items-center">
+                        ¿Los estudiantes de décimo grado pueden tomar estos cursos?
+                        <span class="group-open:rotate-180 transition-transform">▼</span>
+                    </summary>
+                    <p class="mt-4 text-gray-600 leading-relaxed">
+                        <strong>¡Absolutamente SÍ!</strong> Los estudiantes de décimo grado son especialmente bienvenidos. 
+                        <br><br>
+                        <strong>Ventajas para estudiantes de décimo:</strong>
+                        <br>✅ <strong>Mejor preparación:</strong> Tendrás más tiempo para asimilar los conceptos
+                        <br>✅ <strong>Mejores resultados:</strong> Al tener una base más sólida, podrás alcanzar puntajes más altos
+                        <br>✅ <strong>Menos presión:</strong> Podrás aprender a tu ritmo sin la presión inmediata del examen
+                        <br>✅ <strong>Ventaja competitiva:</strong> Llegarás a undécimo con conocimientos avanzados
+                        <br><br>
+                        Muchos de nuestros mejores resultados han sido de estudiantes que empezaron su preparación en décimo grado. 
+                        <strong>¡Es la mejor inversión que puedes hacer en tu futuro académico!</strong>
                     </p>
                 </details>
             </div>
