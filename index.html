@@ -5,14 +5,32 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Pre-ICFES Lumen - Formación Intensiva</title>
     <script src="https://cdn.tailwindcss.com"></script>
-    <meta property="og:description" content="Preicfes ratis - Simulacro ICFES 2026. La mejor manera de estudiar y practicar para la prueba ICFES Saber 11. Obtén excelentes resultados ¡Regístrate ya!">
+    <meta property="og:description" content="Preicfes - Simulacro ICFES 2026. La mejor manera de estudiar y practicar para la prueba ICFES Saber 11. Obtén excelentes resultados ¡Regístrate ya!">
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <style>
-        body { font-family: 'Inter', sans-serif; background-color: #fdf6ed; }
-        .card { background: white; border-radius: 1.5rem; box-shadow: 0 10px 25px -5px rgba(0, 0, 0, 0.1); }
-        .btn-pay { transition: transform 0.2s; }
-        .btn-pay:hover { transform: scale(1.05); }
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body { 
+            font-family: 'Inter', sans-serif; 
+            background-color: #fdf6ed; 
+            padding-top: 80px;
+        }
+        .card { 
+            background: white; 
+            border-radius: 1.5rem; 
+            box-shadow: 0 10px 25px -5px rgba(0, 0, 0, 0.1); 
+        }
+        .btn-pay { 
+            transition: transform 0.2s;
+            display: inline-block;
+        }
+        .btn-pay:hover { 
+            transform: scale(1.05); 
+        }
         .combo-badge {
             background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
             color: white;
@@ -23,33 +41,6 @@
             display: inline-block;
             margin-bottom: 10px;
         }
-        .date-range {
-            background: #f0f9ff;
-            border-left: 4px solid #3b82f6;
-            padding: 10px 15px;
-            border-radius: 8px;
-            margin: 15px 0;
-            font-weight: 600;
-        }
-        .most-popular {
-            position: relative;
-            border: 3px solid #f59e0b;
-            transform: scale(1.05);
-            z-index: 10;
-        }
-        .most-popular::before {
-            content: "MÁS POPULAR";
-            position: absolute;
-            top: -12px;
-            left: 50%;
-            transform: translateX(-50%);
-            background: #f59e0b;
-            color: white;
-            padding: 4px 15px;
-            border-radius: 20px;
-            font-size: 0.8rem;
-            font-weight: bold;
-        }
         .calendar-period {
             background: #eef2ff;
             border-radius: 8px;
@@ -59,15 +50,91 @@
             margin-top: 5px;
             display: inline-block;
         }
-        .preventa-badge {
-            background: linear-gradient(135deg, #f59e0b 0%, #d97706 100%);
+        
+        /* Header Fijo */
+        .fixed-header {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            background: white;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+            z-index: 1000;
+            padding: 12px 24px;
+        }
+        
+        /* Botón WhatsApp Flotante */
+        .whatsapp-float {
+            position: fixed;
+            bottom: 30px;
+            right: 30px;
+            background-color: #25D366;
             color: white;
-            padding: 4px 10px;
-            border-radius: 15px;
-            font-size: 0.75rem;
+            border-radius: 50px;
+            padding: 12px 20px;
+            display: flex;
+            align-items: center;
+            gap: 10px;
+            text-decoration: none;
             font-weight: bold;
-            display: inline-block;
-            margin-left: 8px;
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+            z-index: 1000;
+            transition: transform 0.3s;
+        }
+        .whatsapp-float:hover {
+            transform: scale(1.05);
+        }
+        .whatsapp-float i {
+            font-size: 1.5rem;
+        }
+        
+        /* Navegación */
+        .nav-menu a {
+            text-decoration: none;
+            font-weight: 600;
+            transition: color 0.3s;
+        }
+        .nav-menu a:hover {
+            color: #FF6B35;
+        }
+        
+        /* FAQ Categorías */
+        .faq-category {
+            border-bottom: 2px solid #e5e7eb;
+            margin-bottom: 20px;
+            padding-bottom: 10px;
+        }
+        .faq-category h3 {
+            color: #003366;
+            font-size: 1.3rem;
+        }
+        
+        /* Responsive */
+        @media (max-width: 768px) {
+            body {
+                padding-top: 120px;
+            }
+            .fixed-header {
+                padding: 10px 16px;
+            }
+            .nav-menu {
+                flex-wrap: wrap;
+                justify-content: center;
+                gap: 12px;
+                margin-top: 10px;
+            }
+            .whatsapp-float {
+                padding: 10px 16px;
+                bottom: 20px;
+                right: 20px;
+            }
+            .whatsapp-float span {
+                display: none;
+            }
+            .whatsapp-float i {
+                font-size: 1.8rem;
+                margin: 0;
+            }
         }
     </style>
 
@@ -92,12 +159,40 @@
 </head>
 <body class="text-gray-800">
 
-    <div class="bg-gradient-to-r from-blue-600 to-purple-600 text-white text-center py-3 px-4 font-bold text-sm md:text-base">
-        👉 ¡oferta especial hasta el 21 de marzo ¡inicia el 30 de marzo! 💥
+    <!-- ==================== HEADER FIJO CON LOGO Y MENÚ ==================== -->
+    <div class="fixed-header">
+        <div class="max-w-6xl mx-auto flex flex-col md:flex-row justify-between items-center">
+            <!-- Logo -->
+            <div class="flex items-center gap-3">
+                <img src="https://github.com/anitagomezmesa-pro/Lumen_ICFES240/blob/main/Logotipo%20Lumen.jpg.jpeg?raw=true" 
+                     alt="Lumen Logo" 
+                     class="h-12 w-auto rounded-lg">
+                <span class="text-2xl font-bold text-blue-700">LUMEN</span>
+            </div>
+            
+            <!-- Menú de Navegación -->
+            <div class="nav-menu flex gap-6 mt-3 md:mt-0">
+                <a href="#inicio" class="text-gray-700 hover:text-orange-500">Inicio</a>
+                <a href="#cursos" class="text-gray-700 hover:text-orange-500">Cursos</a>
+                <a href="#testimonios" class="text-gray-700 hover:text-orange-500">Testimonios</a>
+                <a href="#faq" class="text-gray-700 hover:text-orange-500">FAQ</a>
+                <a href="https://wa.link/39i4b2" target="_blank" class="text-green-600 hover:text-green-700">
+                    <i class="fab fa-whatsapp"></i> Contacto
+                </a>
+            </div>
+        </div>
     </div>
+
+    <!-- ==================== BOTÓN WHATSAPP FLOTANTE ==================== -->
+    <a href="https://wa.link/39i4b2" target="_blank" class="whatsapp-float">
+        <i class="fab fa-whatsapp"></i>
+        <span>¡Escríbenos!</span>
+    </a>
 
     <main class="max-w-4xl mx-auto px-4 py-8">
         
+        <!-- ==================== SECCIÓN INICIO ==================== -->
+        <a name="inicio"></a>
         <section class="text-center mb-12">
             <h1 class="text-5xl md:text-6xl font-extrabold text-blue-700 italic mb-2">PRE-ICFES</h1>
             <h2 class="text-xl md:text-2xl text-blue-600 font-semibold italic mb-6">Inicia el 30 de marzo</h2>
@@ -106,21 +201,21 @@
             </p>
         </section>
 
-        <!-- SECCIÓN CON LAS 3 OPCIONES -->
+        <!-- ==================== SECCIÓN CURSOS ==================== -->
+        <a name="cursos"></a>
         <section class="mb-16">
             <div class="text-center mb-10">
-                <span class="combo-badge">OFERTA ESPECIAL</span>
-                <h2 class="text-3xl font-bold text-blue-800">PREPARACIÓN CALENDARIO A</h2>
+                <span class="combo-badge">PREPARACIÓN INTENSIVA</span>
+                <h2 class="text-3xl font-bold text-blue-800">CALENDARIO A</h2>
                 <p class="text-gray-600 mt-2">Diseñada para el ICFES del 26 de julio</p>
             </div>
 
-            <div class="grid md:grid-cols-1 gap-6 max-w-5xl mx-auto">
-                <!-- Opción 2: Pre-ICFES Cal A -->
+            <div class="grid md:grid-cols-1 gap-6 max-w-3xl mx-auto">
+                <!-- Pre-ICFES Cal A -->
                 <div class="card border-2 border-blue-600 p-6">
                     <div class="text-center mb-6">
-                        <h3 class="text-xl font-bold text-blue-700 mb-2">PRE-ICFES CAL A</h3>
-                        <div class="text-4xl font-black text-gray-900">$307.000</div>
-                        <div class="text-sm text-gray-500 line-through mt-1">Normalmente $320.000</div>
+                        <h3 class="text-xl font-bold text-blue-700 mb-2">PRE-ICFES CALENDARIO A</h3>
+                        <div class="text-4xl font-black text-gray-900">$320.000</div>
                         <div class="calendar-period" style="background: #eef2ff;">
                             <i class="fas fa-calendar-alt mr-1"></i> 30 marzo - 24 julio
                         </div>
@@ -157,16 +252,18 @@
                         </li>
                     </ul>
                     
-                    <a href="https://biz.payulatam.com/B0fa4bdDFE99BA5" class="block w-full">
-                        <img src="https://ecommerce.payulatam.com/img-secure-2015/boton_pagar_mediano.png" 
-                             alt="Pagar Pre-ICFES Cal A" 
-                             class="w-full btn-pay">
-                    </a>
+                    <div class="flex justify-center">
+                        <a href="https://biz.payulatam.com/B0fa4bd70AF4178" class="btn-pay">
+                            <img src="https://ecommerce.payulatam.com/img-secure-2015/boton_pagar_pequeno.png" 
+                                 alt="Pagar Pre-ICFES Cal A">
+                        </a>
+                    </div>
                     <p class="text-center text-xs text-gray-500 mt-3">Pago único - Acceso hasta 24 de julio</p>
                 </div>
             </div>
         </section>
 
+        <!-- ==================== BENEFICIOS PRINCIPALES ==================== -->
         <div class="grid md:grid-cols-2 gap-8 items-center mb-16">
             <div class="space-y-4">
                 <div class="flex items-start gap-3">
@@ -191,6 +288,7 @@
             </div>
         </div>
 
+        <!-- ==================== SECCIÓN PROFESORES ==================== -->
         <section class="card p-8 mb-16 border-t-4 border-orange-400">
             <h3 class="text-2xl font-bold mb-4 text-center md:text-left">Creado por expertos que ya dominaron el ICFES</h3>
             <p class="text-gray-700 leading-relaxed">
@@ -198,6 +296,7 @@
             </p>
         </section>
 
+        <!-- ==================== SECCIÓN BENEFICIOS ==================== -->
         <section class="mb-16">
             <h2 class="text-3xl font-bold text-center mb-10 text-blue-800">¿Qué obtendrás con esta formación intensiva?</h2>
             <div class="grid md:grid-cols-2 gap-6">
@@ -220,6 +319,8 @@
             </div>
         </section>
 
+        <!-- ==================== TESTIMONIOS ==================== -->
+        <a name="testimonios"></a>
         <section class="py-12 mb-16">
             <h2 class="text-3xl font-extrabold text-center text-blue-800 mb-10">Testimonios</h2>
             <div class="columns-1 sm:columns-2 lg:columns-3 gap-4 space-y-4">
@@ -231,6 +332,25 @@
             </div>
         </section>
 
+        <!-- ==================== RECURSOS GRATUITOS (REDES SOCIALES) ==================== -->
+        <section class="bg-gradient-to-r from-orange-50 to-blue-50 p-8 rounded-3xl shadow-sm mb-20">
+            <h2 class="text-3xl font-bold text-center mb-6 text-blue-800">📱 SIGUENOS EN REDES SOCIALES</h2>
+            <p class="text-center text-gray-600 mb-8">Contenido gratuito todos los días para ayudarte a prepararte</p>
+            <div class="flex justify-center gap-8 flex-wrap">
+                <a href="https://www.instagram.com/lumenicfes/" target="_blank" class="flex items-center gap-3 bg-gradient-to-r from-pink-500 to-purple-500 text-white px-6 py-3 rounded-full hover:scale-105 transition-transform">
+                    <i class="fab fa-instagram text-2xl"></i>
+                    <span class="font-bold">@lumenicfes</span>
+                </a>
+                <a href="https://www.tiktok.com/@lumenicfes" target="_blank" class="flex items-center gap-3 bg-black text-white px-6 py-3 rounded-full hover:scale-105 transition-transform">
+                    <i class="fab fa-tiktok text-2xl"></i>
+                    <span class="font-bold">@lumenicfes</span>
+                </a>
+            </div>
+            <p class="text-center text-gray-500 text-sm mt-6">Tips diarios, clases cortas, resolución de preguntas y más contenido GRATUITO</p>
+        </section>
+
+        <!-- ==================== PREGUNTAS FRECUENTES (FAQ POR CATEGORÍAS) ==================== -->
+        <a name="faq"></a>
         <section class="text-center space-y-12 bg-white p-10 rounded-3xl shadow-sm mb-20">
             <div>
                 <h4 class="text-orange-500 font-bold text-xl uppercase mb-2">Sin Riesgo:</h4>
@@ -240,9 +360,57 @@
             <hr class="border-gray-100">
 
             <div class="text-left">
-                <h2 class="text-2xl font-bold mb-6 flex items-center gap-2 text-blue-800">
-                    <span>❓</span> Preguntas frecuentes
+                <h2 class="text-2xl font-bold mb-6 text-blue-800 text-center">
+                    <i class="fas fa-question-circle"></i> Preguntas Frecuentes
                 </h2>
+                
+                <!-- Categoría: Inscripción -->
+                <div class="faq-category">
+                    <h3><i class="fas fa-pen-alt text-orange-500 mr-2"></i> INSCRIPCIÓN</h3>
+                </div>
+                <details class="group border-b border-gray-100 py-4 cursor-pointer">
+                    <summary class="font-bold text-lg flex justify-between items-center">
+                        ¿Cómo me inscribo?
+                        <span class="group-open:rotate-180 transition-transform">▼</span>
+                    </summary>
+                    <p class="mt-4 text-gray-600 leading-relaxed">
+                        Solo debes dar clic en el botón "Pagar" de cualquiera de nuestros cursos. Serás redirigido a PayU donde podrás pagar con tarjeta de crédito, débito, PSE, Efecty o tu medio favorito. Una vez realizado el pago, escribe a nuestro WhatsApp <strong>304 127 1545</strong> para confirmar la inscripción.
+                    </p>
+                </details>
+                
+                <details class="group border-b border-gray-100 py-4 cursor-pointer">
+                    <summary class="font-bold text-lg flex justify-between items-center">
+                        ¿Hay descuentos para grupos o referidos?
+                        <span class="group-open:rotate-180 transition-transform">▼</span>
+                    </summary>
+                    <p class="mt-4 text-gray-600 leading-relaxed">
+                        ¡Sí! Contáctanos por WhatsApp al <strong>304 127 1545</strong> y cuéntanos cuántos son. Ofrecemos descuentos especiales para grupos de 3 o más estudiantes. Después de realizar tu pago, confirma tu inscripción por WhatsApp y recibirás un correo electrónico con tu usuario, contraseña y el enlace de acceso a la plataforma educativa. Allí encontrarás todas las clases, materiales y simulacros.
+                    </p>
+                </details>
+                
+                <!-- Categoría: Clases -->
+                <div class="faq-category mt-6">
+                    <h3><i class="fas fa-chalkboard-teacher text-orange-500 mr-2"></i> CLASES</h3>
+                </div>
+                <details class="group border-b border-gray-100 py-4 cursor-pointer">
+                    <summary class="font-bold text-lg flex justify-between items-center">
+                        ¿Cómo se toman las clases?
+                        <span class="group-open:rotate-180 transition-transform">▼</span>
+                    </summary>
+                    <p class="mt-4 text-gray-600 leading-relaxed">
+                        Las clases son 100% <strong>online en vivo por Zoom</strong>. También usamos una plataforma interactiva donde podrás participar, resolver dudas y acceder a todo el material. Las clases son de lunes a viernes de 7:00 PM a 9:00 PM.
+                    </p>
+                </details>
+                
+                <details class="group border-b border-gray-100 py-4 cursor-pointer">
+                    <summary class="font-bold text-lg flex justify-between items-center">
+                        ¿Qué pasa si no puedo asistir a una clase en vivo?
+                        <span class="group-open:rotate-180 transition-transform">▼</span>
+                    </summary>
+                    <p class="mt-4 text-gray-600 leading-relaxed">
+                        Todas las clases quedan <strong>grabadas</strong> y las tendrás disponibles en la plataforma durante todo el tiempo que dure el curso. Puedes verlas cuando quieras y cuantas veces necesites.
+                    </p>
+                </details>
                 
                 <details class="group border-b border-gray-100 py-4 cursor-pointer">
                     <summary class="font-bold text-lg flex justify-between items-center">
@@ -250,29 +418,69 @@
                         <span class="group-open:rotate-180 transition-transform">▼</span>
                     </summary>
                     <p class="mt-4 text-gray-600 leading-relaxed">
-                        <strong>¡Absolutamente SÍ!</strong> Los estudiantes de décimo grado son especialmente bienvenidos. 
-                        <br><br>
-                        <strong>Ventajas para estudiantes de décimo:</strong>
-                        <br>✅ <strong>Mejor preparación:</strong> Tendrás más tiempo para asimilar los conceptos
-                        <br>✅ <strong>Mejores resultados:</strong> Al tener una base más sólida, podrás alcanzar puntajes más altos
-                        <br>✅ <strong>Menos presión:</strong> Podrás aprender a tu ritmo sin la presión inmediata del examen
-                        <br>✅ <strong>Ventaja competitiva:</strong> Llegarás a undécimo con conocimientos avanzados
-                        <br><br>
-                        Muchos de nuestros mejores resultados han sido de estudiantes que empezaron su preparación en décimo grado. 
-                        <strong>¡Es la mejor inversión que puedes hacer en tu futuro académico!</strong>
+                        <strong>¡Absolutamente SÍ!</strong> Los estudiantes de décimo grado son especialmente bienvenidos. Es la mejor inversión: llegarás a undécimo con una base sólida y podrás obtener mejores resultados.
                     </p>
                 </details>
-
+                
+                <!-- Categoría: Pagos -->
+                <div class="faq-category mt-6">
+                    <h3><i class="fas fa-credit-card text-orange-500 mr-2"></i> PAGOS</h3>
+                </div>
                 <details class="group border-b border-gray-100 py-4 cursor-pointer">
                     <summary class="font-bold text-lg flex justify-between items-center">
-                        ¿Qué incluye el Pre-ICFES Calendario A?
+                        ¿Qué medios de pago aceptan?
                         <span class="group-open:rotate-180 transition-transform">▼</span>
                     </summary>
                     <p class="mt-4 text-gray-600 leading-relaxed">
-                        <strong>Pre-ICFES Cal A (30 mar - 24 jul):</strong> Es un curso completo de 4 meses, clases lunes a viernes de 7pm a 9pm, 
-                        formación profunda para el ICFES de julio. <strong>2 simulacros incluidos con análisis detallado.</strong>
-                        <br><br>
-                        Incluye material de estudio actualizado, acceso a grabaciones, soporte en grupo VIP y preparación para alcanzar puntajes altos.
+                        Aceptamos todos los medios de pago a través de <strong>PayU</strong>: tarjetas de crédito (Visa, Mastercard, American Express), tarjetas débito, PSE (pago por transferencia bancaria), Efecty, Baloto y más.
+                    </p>
+                </details>
+                
+                <details class="group border-b border-gray-100 py-4 cursor-pointer">
+                    <summary class="font-bold text-lg flex justify-between items-center">
+                        ¿Puedo pagar en cuotas?
+                        <span class="group-open:rotate-180 transition-transform">▼</span>
+                    </summary>
+                    <p class="mt-4 text-gray-600 leading-relaxed">
+                        Sí, al pagar con tarjeta de crédito a través de PayU puedes seleccionar el número de cuotas que prefieras (sujeto a las políticas de tu banco).
+                    </p>
+                </details>
+                
+                <!-- Categoría: Plataforma -->
+                <div class="faq-category mt-6">
+                    <h3><i class="fas fa-laptop text-orange-500 mr-2"></i> PLATAFORMA</h3>
+                </div>
+                <details class="group border-b border-gray-100 py-4 cursor-pointer">
+                    <summary class="font-bold text-lg flex justify-between items-center">
+                        ¿Cómo accedo a la plataforma?
+                        <span class="group-open:rotate-180 transition-transform">▼</span>
+                    </summary>
+                    <p class="mt-4 text-gray-600 leading-relaxed">
+                        Después de realizar tu pago, recibirás un correo electrónico con tu usuario, contraseña y el enlace de acceso a la plataforma educativa. Allí encontrarás todas las clases, materiales y simulacros.
+                    </p>
+                </details>
+                
+                <details class="group border-b border-gray-100 py-4 cursor-pointer">
+                    <summary class="font-bold text-lg flex justify-between items-center">
+                        ¿Cuánto tiempo tengo acceso al material?
+                        <span class="group-open:rotate-180 transition-transform">▼</span>
+                    </summary>
+                    <p class="mt-4 text-gray-600 leading-relaxed">
+                        Tendrás acceso a todo el material durante la duración del curso. Para el Calendario A, el acceso es hasta el <strong>24 de julio</strong>. Las grabaciones quedan disponibles para que las repases cuando quieras.
+                    </p>
+                </details>
+                
+                <!-- Categoría: Resultados -->
+                <div class="faq-category mt-6">
+                    <h3><i class="fas fa-chart-line text-orange-500 mr-2"></i> RESULTADOS</h3>
+                </div>
+                <details class="group border-b border-gray-100 py-4 cursor-pointer">
+                    <summary class="font-bold text-lg flex justify-between items-center">
+                        ¿Los simulacros son como el ICFES real?
+                        <span class="group-open:rotate-180 transition-transform">▼</span>
+                    </summary>
+                    <p class="mt-4 text-gray-600 leading-relaxed">
+                        ¡Sí! Nuestros simulacros usan la <strong>misma metodología de calificación del ICFES</strong>, con desviación estándar. Te entregamos puntaje global (sobre 500) y puntaje por materia (sobre 100), además de explicaciones detalladas de cada respuesta.
                     </p>
                 </details>
             </div>
@@ -280,8 +488,20 @@
 
     </main>
 
-    <footer class="text-center py-10 text-gray-400 text-sm">
-        &copy; 2024 Lumen Pre-ICFES. Todos los derechos reservados.
+    <!-- ==================== FOOTER ==================== -->
+    <footer class="text-center py-10 text-gray-400 text-sm bg-gray-900">
+        <p>© 2024 Lumen Pre-ICFES. Todos los derechos reservados.</p>
+        <div class="flex justify-center gap-6 mt-4">
+            <a href="https://www.instagram.com/lumenicfes/" target="_blank" class="text-gray-400 hover:text-pink-400">
+                <i class="fab fa-instagram text-xl"></i>
+            </a>
+            <a href="https://www.tiktok.com/@lumenicfes" target="_blank" class="text-gray-400 hover:text-white">
+                <i class="fab fa-tiktok text-xl"></i>
+            </a>
+            <a href="https://wa.link/39i4b2" target="_blank" class="text-gray-400 hover:text-green-400">
+                <i class="fab fa-whatsapp text-xl"></i>
+            </a>
+        </div>
     </footer>
 
 </body>
