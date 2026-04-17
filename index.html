@@ -3,10 +3,10 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Pre-ICFES Lumen - Formación Intensiva</title>
+    <title>Pre-ICFES Lumen - Oferta Especial | Inicio 23 Mayo</title>
     <script src="https://cdn.tailwindcss.com"></script>
-    <meta property="og:description" content="Preicfes - Simulacro ICFES 2026. La mejor manera de estudiar y practicar para la prueba ICFES Saber 11. Obtén excelentes resultados ¡Regístrate ya!">
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+    <meta property="og:description" content="Pre ICFES - Simulacro ICFES 2026. Precio especial $207.000 (Antes $270.000). Inicio 23 de mayo. ¡Regístrate ya!">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;800&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <style>
         * {
@@ -49,6 +49,28 @@
             font-weight: 600;
             margin-top: 5px;
             display: inline-block;
+        }
+        .price-old {
+            text-decoration: line-through;
+            font-size: 1.3rem;
+            color: #9ca3af;
+            margin-right: 10px;
+        }
+        .price-new {
+            font-size: 2.8rem;
+            font-weight: 800;
+            color: #d97706;
+        }
+        .offer-flag {
+            background: #ef4444;
+            color: white;
+            padding: 4px 12px;
+            border-radius: 30px;
+            font-weight: bold;
+            font-size: 0.8rem;
+            display: inline-block;
+            margin-left: 10px;
+            vertical-align: middle;
         }
         
         /* Header Fijo */
@@ -135,6 +157,9 @@
                 font-size: 1.8rem;
                 margin: 0;
             }
+            .price-new {
+                font-size: 2rem;
+            }
         }
     </style>
 
@@ -194,31 +219,43 @@
         <!-- ==================== SECCIÓN INICIO ==================== -->
         <a name="inicio"></a>
         <section class="text-center mb-12">
+            <div class="inline-block bg-red-100 text-red-700 px-4 py-1 rounded-full text-sm font-semibold mb-3 animate-pulse">
+                🔥 OFERTA POR TIEMPO LIMITADO
+            </div>
             <h1 class="text-5xl md:text-6xl font-extrabold text-blue-700 italic mb-2">PRE-ICFES</h1>
-            <h2 class="text-xl md:text-2xl text-blue-600 font-semibold italic mb-6">Inicia el 6 de abril</h2>
+            <h2 class="text-xl md:text-2xl text-blue-600 font-semibold italic mb-6">Inicia el <span class="bg-yellow-200 px-2 rounded">23 de mayo</span></h2>
             <p class="text-lg md:text-xl font-bold leading-relaxed max-w-2xl mx-auto">
                 Alcanza tu mejor resultado en el ICFES con estrategias que ya llevaron a otros a sacar más de 415 puntos.
             </p>
         </section>
 
-        <!-- ==================== SECCIÓN CURSOS ==================== -->
+        <!-- ==================== SECCIÓN CURSOS con PRECIO ESPECIAL ==================== -->
         <a name="cursos"></a>
         <section class="mb-16">
             <div class="text-center mb-10">
-                <span class="combo-badge">PREPARACIÓN INTENSIVA</span>
-                <h2 class="text-3xl font-bold text-blue-800">CALENDARIO A</h2>
-                <p class="text-gray-600 mt-2">Diseñada para el ICFES del 26 de julio</p>
+                <span class="combo-badge">🔥 PROMOCIÓN ESPECIAL 🔥</span>
+                <h2 class="text-3xl font-bold text-blue-800">CALENDARIO A - INICIO 23 MAYO</h2>
+                <p class="text-gray-600 mt-2">Preparación intensiva para el ICFES 2026 (julio)</p>
             </div>
 
             <div class="grid md:grid-cols-1 gap-6 max-w-3xl mx-auto">
-                <!-- Pre-ICFES Cal A -->
-                <div class="card border-2 border-blue-600 p-6">
+                <!-- Pre-ICFES Cal A con precio rebajado 207.000 (normal 270.000) -->
+                <div class="card border-2 border-orange-400 p-6 relative overflow-hidden">
+                    <!-- Ribbon de oferta -->
+                    <div class="absolute top-0 right-0 bg-orange-500 text-white px-6 py-1 rotate-45 translate-x-8 translate-y-4 text-sm font-bold shadow-md">
+                        -23%
+                    </div>
                     <div class="text-center mb-6">
                         <h3 class="text-xl font-bold text-blue-700 mb-2">PRE-ICFES CALENDARIO A</h3>
-                        <div class="text-4xl font-black text-gray-900">$320.000</div>
-                        <div class="calendar-period" style="background: #eef2ff;">
-                            <i class="fas fa-calendar-alt mr-1"></i> 6 de abril - 24 julio
+                        <div class="flex items-center justify-center gap-3 flex-wrap">
+                            <span class="price-old">$270.000</span>
+                            <span class="price-new">$207.000</span>
+                            <span class="offer-flag">AHORRA $63.000</span>
                         </div>
+                        <div class="calendar-period mt-2" style="background: #fee2e2;">
+                            <i class="fas fa-calendar-alt mr-1"></i> <strong>📅 Inicio: 23 de mayo</strong> — Clases hasta 24 de julio
+                        </div>
+                        <p class="text-xs text-green-700 font-semibold mt-1">✨ Precio especial por lanzamiento • Cupos limitados</p>
                     </div>
                     
                     <ul class="space-y-3 mb-8 text-sm">
@@ -228,37 +265,38 @@
                         </li>
                         <li class="flex items-start gap-2">
                             <span class="text-green-500">✓</span>
-                            <span><strong>2 simulacros con análisis detallado</strong></span>
+                            <span><strong>2 simulacros con análisis detallado estilo ICFES</strong></span>
                         </li>
                         <li class="flex items-start gap-2">
                             <span class="text-green-500">✓</span>
-                            <span><strong>Clases en vivo lunes a viernes 7pm-9pm</strong></span>
+                            <span><strong>Clases en vivo lunes a viernes 7pm-9pm</strong> (Inicio 23 de mayo)</span>
                         </li>
                         <li class="flex items-start gap-2">
                             <span class="text-green-500">✓</span>
-                            <span><strong>4 meses de preparación intensiva</strong></span>
+                            <span><strong>Preparación intensiva 2 meses + material actualizado</strong></span>
                         </li>
                         <li class="flex items-start gap-2">
                             <span class="text-green-500">✓</span>
-                            <span><strong>Material de estudio actualizado</strong></span>
+                            <span><strong>Acceso a grabaciones y banco de preguntas</strong></span>
                         </li>
                         <li class="flex items-start gap-2">
                             <span class="text-green-500">✓</span>
-                            <span><strong>Soporte en grupo VIP</strong></span>
+                            <span><strong>Soporte en grupo VIP + seguimiento personalizado</strong></span>
                         </li>
                         <li class="flex items-start gap-2">
                             <span class="text-green-500">✓</span>
-                            <span><strong>Preparación para puntajes altos</strong></span>
+                            <span><strong>Estrategias para puntajes altos (415+ puntos)</strong></span>
                         </li>
                     </ul>
                     
                     <div class="flex justify-center">
-                        <a href="https://biz.payulatam.com/B0fa4bd70AF4178" class="btn-pay">
-                            <img src="https://ecommerce.payulatam.com/img-secure-2015/boton_pagar_pequeno.png" 
-                                 alt="Pagar Pre-ICFES Cal A">
+                        <!-- Link de pago actualizado manteniendo el mismo botón PayU -->
+                        <a href="https://biz.payulatam.com/B0fa4bd4BCA68B3" class="btn-pay">
+                            <img src="https://ecommerce.payulatam.com/img-secure-2015/boton_pagar_mediano.png"
+                                 alt="Pagar Pre-ICFES Cal A - Oferta 207.000">
                         </a>
                     </div>
-                    <p class="text-center text-xs text-gray-500 mt-3">Pago único - Acceso hasta 24 de julio</p>
+                    <p class="text-center text-xs text-gray-500 mt-3">*Precio promocional $207.000 (Precio regular $270.000) • Inicio 23 de mayo</p>
                 </div>
             </div>
         </section>
@@ -268,19 +306,19 @@
             <div class="space-y-4">
                 <div class="flex items-start gap-3">
                     <span class="text-green-500 text-xl">✅</span>
-                    <p><strong>Clases en vivo:</strong> lunes a viernes 7pm a 9pm.</p>
+                    <p><strong>Clases en vivo desde el 23 de mayo:</strong> lunes a viernes 7pm a 9pm.</p>
                 </div>
                 <div class="flex items-start gap-3">
                     <span class="text-green-500 text-xl">✅</span>
-                    <p>Diseñado para <strong>llevar tu puntaje al siguiente nivel.</strong></p>
+                    <p>Diseñado para <strong>llevar tu puntaje al siguiente nivel con descuento especial.</strong></p>
                 </div>
                 <div class="flex items-start gap-3">
                     <span class="text-green-500 text-xl">✅</span>
-                    <p>Con <strong>profesores expertos</strong> en su área y comprometidos.</p>
+                    <p>Con <strong>profesores expertos</strong> en su área y comprometidos (puntajes 415-491).</p>
                 </div>
                 <div class="flex items-start gap-3">
                     <span class="text-green-500 text-xl">✅</span>
-                    <p><strong>Simulacros reales</strong> con calificación detallada</p>
+                    <p><strong>Simulacros reales</strong> con calificación detallada y retroalimentación.</p>
                 </div>
             </div>
             <div class="card p-4">
@@ -310,11 +348,11 @@
                 </div>
                 <div class="card p-6 flex items-center gap-4">
                     <span class="text-3xl">📝</span>
-                    <p><strong>Material actualizado</strong> y preguntas reales</p>
+                    <p><strong>Material actualizado</strong> y preguntas tipo ICFES</p>
                 </div>
                 <div class="card p-6 flex items-center gap-4">
                     <span class="text-3xl">🤝</span>
-                    <p><strong>Acompañamiento</strong> y resolución de dudas</p>
+                    <p><strong>Acompañamiento</strong> y resolución de dudas 24/7 en grupo VIP</p>
                 </div>
             </div>
         </section>
@@ -322,7 +360,7 @@
         <!-- ==================== TESTIMONIOS ==================== -->
         <a name="testimonios"></a>
         <section class="py-12 mb-16">
-            <h2 class="text-3xl font-extrabold text-center text-blue-800 mb-10">Testimonios</h2>
+            <h2 class="text-3xl font-extrabold text-center text-blue-800 mb-10">Testimonios de estudiantes que confiaron en Lumen</h2>
             <div class="columns-1 sm:columns-2 lg:columns-3 gap-4 space-y-4">
                 <img src="https://raw.githubusercontent.com/anitagomezmesa-pro/Lumen_ICFES240/main/Captura%20de%20pantalla%202025-12-27%20222910.png" class="rounded-2xl shadow-md w-full border border-gray-100" alt="Testimonio">
                 <img src="https://raw.githubusercontent.com/anitagomezmesa-pro/Lumen_ICFES240/main/1.1.png" class="rounded-2xl shadow-md w-full border border-gray-100" alt="Testimonio">
@@ -334,7 +372,7 @@
 
         <!-- ==================== RECURSOS GRATUITOS (REDES SOCIALES) ==================== -->
         <section class="bg-gradient-to-r from-orange-50 to-blue-50 p-8 rounded-3xl shadow-sm mb-20">
-            <h2 class="text-3xl font-bold text-center mb-6 text-blue-800">📱 SIGUENOS EN REDES SOCIALES</h2>
+            <h2 class="text-3xl font-bold text-center mb-6 text-blue-800">📱 SÍGUENOS EN REDES SOCIALES</h2>
             <p class="text-center text-gray-600 mb-8">Contenido gratuito todos los días para ayudarte a prepararte</p>
             <div class="flex justify-center gap-8 flex-wrap">
                 <a href="https://www.instagram.com/lumenicfes/" target="_blank" class="flex items-center gap-3 bg-gradient-to-r from-pink-500 to-purple-500 text-white px-6 py-3 rounded-full hover:scale-105 transition-transform">
@@ -349,7 +387,7 @@
             <p class="text-center text-gray-500 text-sm mt-6">Tips diarios, clases cortas, resolución de preguntas y más contenido GRATUITO</p>
         </section>
 
-        <!-- ==================== PREGUNTAS FRECUENTES (FAQ POR CATEGORÍAS) ==================== -->
+        <!-- ==================== PREGUNTAS FRECUENTES (FAQ POR CATEGORÍAS) con nueva fecha ==================== -->
         <a name="faq"></a>
         <section class="text-center space-y-12 bg-white p-10 rounded-3xl shadow-sm mb-20">
             <div>
@@ -366,15 +404,25 @@
                 
                 <!-- Categoría: Inscripción -->
                 <div class="faq-category">
-                    <h3><i class="fas fa-pen-alt text-orange-500 mr-2"></i> INSCRIPCIÓN</h3>
+                    <h3><i class="fas fa-pen-alt text-orange-500 mr-2"></i> INSCRIPCIÓN Y PRECIO</h3>
                 </div>
                 <details class="group border-b border-gray-100 py-4 cursor-pointer">
                     <summary class="font-bold text-lg flex justify-between items-center">
-                        ¿Cómo me inscribo?
+                        ¿Cuál es el precio promocional y hasta cuándo?
                         <span class="group-open:rotate-180 transition-transform">▼</span>
                     </summary>
                     <p class="mt-4 text-gray-600 leading-relaxed">
-                        Solo debes dar clic en el botón "Pagar" de cualquiera de nuestros cursos. Serás redirigido a PayU donde podrás pagar con tarjeta de crédito, débito, PSE, Efecty o tu medio favorito. Una vez realizado el pago, escribe a nuestro WhatsApp <strong>304 127 1545</strong> para confirmar la inscripción.
+                        El precio normal del curso es <strong>$270.000</strong>, pero por lanzamiento y oferta especial lo obtienes en <strong class="text-orange-600">$207.000</strong> (ahorro de $63.000). La promoción es por tiempo limitado y aplica para los primeros inscritos al calendario A con inicio 23 de mayo.
+                    </p>
+                </details>
+
+                <details class="group border-b border-gray-100 py-4 cursor-pointer">
+                    <summary class="font-bold text-lg flex justify-between items-center">
+                        ¿Cómo me inscribo con el precio especial?
+                        <span class="group-open:rotate-180 transition-transform">▼</span>
+                    </summary>
+                    <p class="mt-4 text-gray-600 leading-relaxed">
+                        Solo debes dar clic en el botón "Pagar" del curso. Serás redirigido a PayU donde podrás pagar con tarjeta de crédito, débito, PSE, Efecty o tu medio favorito. Una vez realizado el pago, escríbenos a nuestro WhatsApp <strong>304 127 1545</strong> para confirmar la inscripción y recibir acceso inmediato.
                     </p>
                 </details>
                 
@@ -384,21 +432,31 @@
                         <span class="group-open:rotate-180 transition-transform">▼</span>
                     </summary>
                     <p class="mt-4 text-gray-600 leading-relaxed">
-                        ¡Sí! Contáctanos por WhatsApp al <strong>304 127 1545</strong> y cuéntanos cuántos son. Ofrecemos descuentos especiales para grupos de 3 o más estudiantes. Después de realizar tu pago, confirma tu inscripción por WhatsApp y recibirás un correo electrónico con tu usuario, contraseña y el enlace de acceso a la plataforma educativa. Allí encontrarás todas las clases, materiales y simulacros.
+                        ¡Sí! Contáctanos por WhatsApp al <strong>304 127 1545</strong> y cuéntanos cuántos son. Ofrecemos descuentos especiales para grupos de 3 o más estudiantes. Después de realizar tu pago, confirma tu inscripción por WhatsApp y recibirás un correo electrónico con tu usuario, contraseña y el enlace de acceso a la plataforma.
                     </p>
                 </details>
                 
-                <!-- Categoría: Clases -->
+                <!-- Categoría: Clases y fechas actualizadas -->
                 <div class="faq-category mt-6">
-                    <h3><i class="fas fa-chalkboard-teacher text-orange-500 mr-2"></i> CLASES</h3>
+                    <h3><i class="fas fa-chalkboard-teacher text-orange-500 mr-2"></i> CLASES - INICIO 23 DE MAYO</h3>
                 </div>
+                <details class="group border-b border-gray-100 py-4 cursor-pointer">
+                    <summary class="font-bold text-lg flex justify-between items-center">
+                        ¿Confirmado el inicio el 23 de mayo?
+                        <span class="group-open:rotate-180 transition-transform">▼</span>
+                    </summary>
+                    <p class="mt-4 text-gray-600 leading-relaxed">
+                        Así es. El curso <strong>PRE-ICFES Calendario A inicia el 23 de mayo</strong>. Las clases en vivo son de lunes a viernes de 7:00 PM a 9:00 PM (hora Colombia). Tendrás todo el material y la preparación enfocada en el ICFES del 26 de julio.
+                    </p>
+                </details>
+
                 <details class="group border-b border-gray-100 py-4 cursor-pointer">
                     <summary class="font-bold text-lg flex justify-between items-center">
                         ¿Cómo se toman las clases?
                         <span class="group-open:rotate-180 transition-transform">▼</span>
                     </summary>
                     <p class="mt-4 text-gray-600 leading-relaxed">
-                        Las clases son 100% <strong>online en vivo por Zoom</strong>. También usamos una plataforma interactiva donde podrás participar, resolver dudas y acceder a todo el material. Las clases son de lunes a viernes de 7:00 PM a 9:00 PM.
+                        Las clases son 100% <strong>online en vivo por Zoom</strong>. También usamos una plataforma interactiva donde podrás participar, resolver dudas y acceder a todo el material. Las clases son dinámicas y quedarán grabadas.
                     </p>
                 </details>
                 
@@ -438,25 +496,25 @@
                 
                 <details class="group border-b border-gray-100 py-4 cursor-pointer">
                     <summary class="font-bold text-lg flex justify-between items-center">
-                        ¿Puedo pagar en cuotas?
+                        ¿Puedo pagar en cuotas con el precio de $207.000?
                         <span class="group-open:rotate-180 transition-transform">▼</span>
                     </summary>
                     <p class="mt-4 text-gray-600 leading-relaxed">
-                        Sí, al pagar con tarjeta de crédito a través de PayU puedes seleccionar el número de cuotas que prefieras (sujeto a las políticas de tu banco).
+                        Sí, al pagar con tarjeta de crédito a través de PayU puedes seleccionar el número de cuotas que prefieras (sujeto a las políticas de tu banco). El valor promocional se mantiene.
                     </p>
                 </details>
                 
                 <!-- Categoría: Plataforma -->
                 <div class="faq-category mt-6">
-                    <h3><i class="fas fa-laptop text-orange-500 mr-2"></i> PLATAFORMA</h3>
+                    <h3><i class="fas fa-laptop text-orange-500 mr-2"></i> PLATAFORMA Y ACCESO</h3>
                 </div>
                 <details class="group border-b border-gray-100 py-4 cursor-pointer">
                     <summary class="font-bold text-lg flex justify-between items-center">
-                        ¿Cómo accedo a la plataforma?
+                        ¿Cómo accedo a la plataforma después de pagar?
                         <span class="group-open:rotate-180 transition-transform">▼</span>
                     </summary>
                     <p class="mt-4 text-gray-600 leading-relaxed">
-                        Después de realizar tu pago, recibirás un correo electrónico con tu usuario, contraseña y el enlace de acceso a la plataforma educativa. Allí encontrarás todas las clases, materiales y simulacros.
+                        Después de realizar tu pago, recibirás un correo electrónico con tu usuario, contraseña y el enlace de acceso a la plataforma educativa. Allí encontrarás todas las clases, materiales y simulacros. Además, te agregaremos al grupo VIP de WhatsApp.
                     </p>
                 </details>
                 
@@ -466,7 +524,7 @@
                         <span class="group-open:rotate-180 transition-transform">▼</span>
                     </summary>
                     <p class="mt-4 text-gray-600 leading-relaxed">
-                        Tendrás acceso a todo el material durante la duración del curso. Para el Calendario A, el acceso es hasta el <strong>24 de julio</strong>. Las grabaciones quedan disponibles para que las repases cuando quieras.
+                        Tendrás acceso a todo el material durante la duración del curso. Para el Calendario A (inicio 23 de mayo), el acceso es hasta el <strong>24 de julio</strong>. Las grabaciones quedan disponibles para que las repases cuando quieras.
                     </p>
                 </details>
                 
@@ -490,7 +548,7 @@
 
     <!-- ==================== FOOTER ==================== -->
     <footer class="text-center py-10 text-gray-400 text-sm bg-gray-900">
-        <p>© 2024 Lumen Pre-ICFES. Todos los derechos reservados.</p>
+        <p>© 2025 Lumen Pre-ICFES. Todos los derechos reservados. | Inicio: 23 de mayo - Precio especial $207.000</p>
         <div class="flex justify-center gap-6 mt-4">
             <a href="https://www.instagram.com/lumenicfes/" target="_blank" class="text-gray-400 hover:text-pink-400">
                 <i class="fab fa-instagram text-xl"></i>
